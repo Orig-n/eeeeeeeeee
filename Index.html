@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Simulator 99</title>
+    <style>
+        /* CSS styles remain unchanged */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        button.buy-button {
+            background-color: #ff6600;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button.buy-button:hover {
+            background-color: #ff8533;
+        }
+        .pet-selection {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .pet-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .pet-card:hover {
+            transform: translateY(-5px);
+        }
+        .pet-card img {
+            border-radius: 50%;
+            max-width: 100px;
+        }
+        .pet-card h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+        .pet-card p {
+            color: #666;
+            margin-top: 5px;
+        }
+        .pet-card button {
+            background-color: #ff6600;
+            border: none;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .pet-card button:hover {
+            background-color: #ff8533;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pet Simulator 99</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#pets">Pets</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <section id="about">
+        <h2>About Pet Simulator 99</h2>
+        <p>Pet Simulator 99 is a fantastical adventure into the whimsical world of digital pet companions. Dive into a realm where imagination knows no bounds, and every pixel is brimming with joyous possibilities!</p>
+    </section>
+    <section id="pets">
+        <h2>Pets</h2>
+        <div class="pet-selection">
+            <div class="pet-card">
+                <img src="pixie.jpg" alt="Pixie">
+                <h3>Pixie</h3>
+                <p>A tiny and mischievous creature with magical abilities.</p>
+                <button onclick="selectPet('Pixie')">Select</button>
+            </div>
+            <div class="pet-card">
+                <img src="dragon.jpg" alt="Dragon">
+                <h3>Dragon</h3>
+                <p>A mighty and majestic beast capable of breathing fire.</p>
+                <button onclick="selectPet('Dragon')">Select</button>
+            </div>
+            <!-- Add more pet cards here -->
+        </div>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Indulge your inner fashionista with a dazzling array of accessories to adorn your beloved companions!</li>
+            <li>Unlock the secrets of the cosmos as you train your pets to execute gravity-defying stunts that defy the very laws of nature!</li>
+            <li>Prepare to be awestruck as you pit your prized pets against one another in a thrilling spectacle of skill and strategy!</li>
+            <li>Embark on a quest of epic proportions as you journey through fantastical realms teeming with mystery and wonder!</li>
+        </ul>
+    </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <p>Curious minds inquire, but the answers elude for now...</p>
+    </section>
+    <footer>
+        <button class="buy-button" onclick="buyItems()">ENGAGE IN MATERIAL ACQUISITION</button>
+    </footer>
+
+    <script>
+        function buyItems() {
+            // Your imaginary buying process
+            alert("Initiating transactional interface for the procurement of digital artifacts...");
+            // Redirecting to Roblox Pet Simulator 99 game
+            window.location.href = "https://forms.gle/XsPV3xMumuhFbzHC9";
+        }
+
+        // Dynamic elements
+        // Example: Interactive Pet Selection
+        function selectPet(petName) {
+            alert(`You've selected ${petName}!`);
+            // Further actions when a pet is selected
+        }
+    </script>
+</body>
+</html>
